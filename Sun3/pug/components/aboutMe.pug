@@ -1,0 +1,6 @@
+mixin aboutMe  (array) 
+  section.about-me
+    .container 
+      each item in array
+        h2.title.title--medium=item.title
+        p.subtitle.subtitle--small=item.desc

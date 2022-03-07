@@ -1,0 +1,11 @@
+mixin hero
+    section.hero.text-center.pt-5
+        .container
+            .hero__wrapper 
+                each item in hero
+                    .hero__body 
+                        h1.title=item.title
+                        p.subtitle=item.subtitle
+                        img.hero__avt(src=item.avtSrc, alt=item.avtAlt)
+                    .hero__foot
+                        img.hero__foot-img(src=item.imgFooter, alt=item.imgAlt)

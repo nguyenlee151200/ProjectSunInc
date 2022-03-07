@@ -1,0 +1,22 @@
+@import '../base/mixin';
+@import '../base/variables';
+.card-startup {
+  text-align: center;
+  padding: 60px 40px;
+  border-radius: 1rem;
+  box-shadow: 0 0px 1px 0 $bg-black;
+  margin-bottom: 2rem;
+  & img.card-logo {
+    height: 42px;
+    width: auto;
+    margin-bottom: 2rem;
+  }
+  & .card-body p {
+    font-size: $fs-lg;
+  }
+  & .card-body a.link-address {
+    color: $color-violet;
+    font-size: $fs-lg;
+    font-weight: $fw-medium;
+  }
+}

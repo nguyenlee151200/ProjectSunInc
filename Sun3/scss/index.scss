@@ -1,0 +1,15 @@
+@use './base/global';
+@use './base/reset';
+@use './base/typography';
+@use './components/button';
+@use './layouts/header';
+@use './components/hero.scss';
+@use './components/aboutMe.scss';
+@use './components/cardSkill';
+@use './components/project';
+@use './components/itemProject';
+@use './components/client';
+@use './components/startUp';
+@use './components/testimonials';
+@use './components/cta';
+@use './layouts/footer';

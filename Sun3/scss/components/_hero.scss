@@ -1,0 +1,23 @@
+@import '../base/variables';
+@import '../base/mixin';
+
+.hero__wrapper {
+  @include flex;
+}
+.hero__body {
+  padding: 3rem 0;
+}
+.hero__avt {
+  width: 150px;
+  margin: 2rem 0;
+}
+@include sm {
+  .hero__avt {
+    width: 210px;
+  }
+}
+@include md {
+  .hero__foot-img {
+    max-width: 900px;
+  }
+}

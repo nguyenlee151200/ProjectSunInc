@@ -1,0 +1,14 @@
+@import './itemStartUp';
+
+.startup {
+  margin-top: -8rem;
+  padding-bottom: 9rem;
+  @include flex;
+  text-align: center;
+  & .callout {
+    padding-top: 4rem;
+    & .subtitle {
+      padding-bottom: 2rem;
+    }
+  }
+}

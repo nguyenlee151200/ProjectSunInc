@@ -1,0 +1,20 @@
+@import '../base/mixin';
+@import '../base/variables';
+.cta {
+  background-color: $color-violet;
+  padding: 5rem 1rem;
+}
+.cta__wrapper {
+  background-color: $bg-black;
+  color: $color-white;
+  padding: 3.5rem 1.25rem;
+  border-radius: 1rem;
+  text-align: center;
+  margin-top: -9rem;
+  & .title {
+    color: $color-white;
+  }
+  & .button {
+    color: $color-white;
+  }
+}

@@ -1,0 +1,399 @@
+@import url("http://fonts.cdnfonts.com/css/eurostile-extended");
+@import url(//db.onlinewebfonts.com/c/23c0fcab84d99da0de762de7e220a6e1?family=Europa);
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+main {
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Eurostile Extended", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding-left: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+img {
+  width: 100%;
+}
+
+.title {
+  font-size: 2rem;
+  color: #141c3a;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+.title.title--small {
+  font-size: 1.5rem;
+}
+.title.title--medium {
+  font-size: 2rem;
+}
+.title.title--xs {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5;
+  font-family: "Europa", sans-serif;
+  color: #141c3a;
+}
+.subtitle.subtitle--small {
+  font-size: 1.25rem;
+  font-family: "Eurostile Extended", sans-serif;
+}
+.subtitle.subtitle--xs {
+  font-size: 1rem;
+  font-family: "Eurostile Extended", sans-serif;
+}
+
+@media (min-width: 576px) {
+  .title {
+    font-size: 3rem;
+  }
+
+  .subtitle {
+    font-size: 1.5rem;
+  }
+}
+.button {
+  background: transparent;
+  color: #7510f7;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0.5rem 1.25rem;
+  font-family: "Europa", sans-serif;
+}
+.button:hover {
+  background: #7510f7;
+  color: #fff;
+}
+.button.btn--outline {
+  border: 2px solid #7510f7;
+  border-radius: 2rem;
+}
+.button.btn--medium {
+  padding: 0.5rem 2rem;
+}
+
+.nav-item {
+  padding-left: 1rem;
+  line-height: 1.5;
+}
+
+.nav-link {
+  font-size: 18px;
+  font-weight: 400;
+  color: #141c3a !important;
+  font-family: "Europa", sans-serif;
+}
+.nav-link:hover {
+  color: #7510f7 !important;
+}
+
+header {
+  padding: 1.2rem 0;
+}
+
+.hero__wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero__body {
+  padding: 3rem 0;
+}
+
+.hero__avt {
+  width: 150px;
+  margin: 2rem 0;
+}
+
+@media (min-width: 576px) {
+  .hero__avt {
+    width: 210px;
+  }
+}
+@media (min-width: 768px) {
+  .hero__foot-img {
+    max-width: 900px;
+  }
+}
+.about-me {
+  padding-bottom: 10rem;
+  padding: 9rem 0;
+  background-color: #7510f7;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .about-me {
+    padding-bottom: 18rem;
+  }
+}
+.about-me .title,
+.about-me .subtitle {
+  color: #fff;
+}
+@media (min-width: 992px) {
+  .about-me .container {
+    width: 60%;
+  }
+}
+
+.skills {
+  margin-top: -10rem;
+}
+
+.card-group {
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 2px 0 rgba(10, 10, 10, 0.5);
+}
+
+.card-group .card {
+  padding: 60px 35px;
+}
+
+.card-group .card-logo {
+  height: 50px;
+  margin-bottom: 2rem;
+}
+
+.card-group p {
+  font-size: 18px;
+  margin-bottom: 2rem;
+  line-height: 30px;
+}
+
+.learn__title,
+.tool__title {
+  font-size: 18px;
+  font-weight: 400;
+  color: #7510f7;
+  margin: 1rem 0;
+}
+
+.tool-item {
+  font-size: 18px;
+  padding: 0.5rem 0;
+}
+
+.project {
+  padding: 9rem 1.5rem;
+}
+.project .row {
+  padding-top: 2rem 0.5rem;
+}
+@media (min-width: 768px) {
+  .project .row {
+    padding-top: 4rem;
+  }
+}
+.project .button {
+  margin: 2rem;
+}
+
+.project__img {
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+.project__img::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: #141c3a;
+  opacity: 0;
+  transition: 0.6s ease-in-out;
+}
+.project__img:hover::after {
+  opacity: 1;
+}
+.project__img img {
+  transform: scale(1);
+  transition: 0.2s ease-in-out;
+}
+.project__img:hover img {
+  transform: scale(1.1);
+}
+.project__img:hover .project__cap {
+  opacity: 1;
+}
+
+.project__cap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  top: 20%;
+  opacity: 0;
+  z-index: 2;
+}
+.project__cap .title,
+.project__cap .button {
+  color: #fff;
+}
+
+.client {
+  padding: 9rem 1.5rem;
+  border-top: 1px solid #0a0a0a;
+}
+.client .container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.client .title {
+  display: flex;
+  flex: none;
+}
+@media (min-width: 768px) {
+  .client .title {
+    width: 50%;
+  }
+}
+.client .row {
+  padding-top: 3rem;
+}
+
+.card-startup {
+  text-align: center;
+  padding: 60px 40px;
+  border-radius: 1rem;
+  box-shadow: 0 0px 1px 0 #141c3a;
+  margin-bottom: 2rem;
+}
+.card-startup img.card-logo {
+  height: 42px;
+  width: auto;
+  margin-bottom: 2rem;
+}
+.card-startup .card-body p {
+  font-size: 18px;
+}
+.card-startup .card-body a.link-address {
+  color: #7510f7;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.startup {
+  margin-top: -8rem;
+  padding-bottom: 9rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.startup .callout {
+  padding-top: 4rem;
+}
+.startup .callout .subtitle {
+  padding-bottom: 2rem;
+}
+
+.testimonials {
+  border-top: 1px solid #141c3a;
+  padding: 9rem 1.5rem;
+}
+.testimonials img.author__img {
+  margin: 4rem auto 2rem;
+  max-width: 96px;
+  height: auto;
+}
+.testimonials .author__desc {
+  font-size: 22px;
+  font-weight: 300;
+  margin: 0 auto 2.5rem;
+  font-family: "Eurostile Extended", sans-serif;
+  max-width: 700px;
+}
+
+.cta {
+  background-color: #7510f7;
+  padding: 5rem 1rem;
+}
+
+.cta__wrapper {
+  background-color: #141c3a;
+  color: #fff;
+  padding: 3.5rem 1.25rem;
+  border-radius: 1rem;
+  text-align: center;
+  margin-top: -9rem;
+}
+.cta__wrapper .title {
+  color: #fff;
+}
+.cta__wrapper .button {
+  color: #fff;
+}
+
+footer {
+  background-color: #7510f7;
+  color: #fff;
+}
+footer .desc-center {
+  display: flex;
+  justify-content: center;
+}
+footer .desc-center .desc {
+  font-size: 1.6rem;
+  margin: 2rem auto;
+}
+@media (min-width: 768px) {
+  footer .desc-center .desc {
+    width: 33%;
+  }
+}
+footer .made-by-bulma {
+  opacity: 0.6;
+}
+footer .made-by-bulma img {
+  width: 163px;
+  height: 30px;
+}
+
+/*# sourceMappingURL=index.css.map */

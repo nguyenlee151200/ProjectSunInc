@@ -1,0 +1,22 @@
+@import '../base/mixin';
+@import '../base/variables';
+.about-me {
+  padding-bottom: 10rem;
+  padding: 9rem 0;
+  background-color: $color-violet;
+  color: $color-white;
+  text-align: center;
+  @include flex;
+  @include md {
+    padding-bottom: 18rem;
+  }
+  & .title,
+  .subtitle {
+    color: $color-white;
+  }
+  & .container {
+    @include lg {
+      width: 60%;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+@import '../base/mixin';
+@import '../base/variables';
+
+.client {
+  padding: 9rem 1.5rem;
+  border-top: 1px solid $color-black;
+  & .container {
+    @include flex;
+  }
+  & .title {
+    display: flex;
+    flex: none;
+    @include md {
+      width: 50%;
+    }
+  }
+  & .row {
+    padding-top: 3rem;
+  }
+}

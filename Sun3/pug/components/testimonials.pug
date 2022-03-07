@@ -1,0 +1,14 @@
+mixin testimonials
+    section.testimonials
+        .container.text-center
+            each item in testimonial
+                h2.title.title--small=item.title 
+                p.subtitle.subtile--small=item.desc 
+                .author.row
+                    .col-md-8.offset-md-2.col-12 
+                        each info in author 
+                            img.author__img(src=info.src,alt=info .alt)
+                            p.author__desc=info.desc 
+                            h4.title.title--xs=info.title
+                            p.subtitle.subtitle--xs=info.subtitle 
+

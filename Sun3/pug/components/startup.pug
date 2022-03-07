@@ -1,0 +1,12 @@
+mixin startup 
+    section.startup
+        .container 
+            .row 
+                each item in startup 
+                    .col-lg-4.col-md-6.col-12 
+                        +itemStartUp(item)
+            .callout 
+                each call in callout 
+                    h3.title.title--small=call.title
+                    p.subtitle.subtitle--small=call.desc
+                    +button(call.button)

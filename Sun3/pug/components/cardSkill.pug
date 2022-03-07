@@ -1,0 +1,17 @@
+mixin cardSkill
+    section.skills 
+        .container.text-center 
+            .card-group
+                each item in skills
+                    .card   
+                        img.card-logo(src=item.src, alt=item.alt)
+                        h3.title.title--small=item.title
+                        p.desc=item.desc
+                        .learn 
+                            h4.learn__title=item.learnTitle 
+                            p.learn__text=item.learnTxt
+                        .tools 
+                            h4.tool__title=item.toolTitle
+                            ul.tool-list 
+                                each child in item.toolItem
+                                    li.tool-item= child

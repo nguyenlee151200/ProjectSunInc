@@ -1,0 +1,43 @@
+@import './variables';
+@import './mixin';
+
+.title {
+  font-size: 2rem;
+  color: #141c3a;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  &.title--small {
+    font-size: 1.5rem;
+  }
+  &.title--medium {
+    font-size: 2rem;
+  }
+  &.title--xs {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+}
+.subtitle {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5;
+  font-family: 'Europa', sans-serif;
+  color: #141c3a;
+  &.subtitle--small {
+    font-size: 1.25rem;
+    font-family: $ff-eurostile;
+  }
+  &.subtitle--xs {
+    font-size: 1rem;
+    font-family: $ff-eurostile;
+  }
+}
+
+@include sm {
+  .title {
+    font-size: 3rem;
+  }
+  .subtitle {
+    font-size: 1.5rem;
+  }
+}

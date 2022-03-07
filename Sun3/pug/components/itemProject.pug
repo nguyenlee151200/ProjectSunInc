@@ -1,0 +1,6 @@
+mixin itemProject(arr)
+    figure.project__img
+        img(src= arr.src, alt= arr.alt)
+        figcaption.project__cap
+            p.title.title--small=arr.desc 
+            +button(arr.button)

@@ -1,0 +1,32 @@
+@import '../base/mixin';
+@import '../base/variables';
+.skills {
+  margin-top: -10rem;
+}
+.card-group {
+  border-radius: 0.5rem;
+  box-shadow: (0 1px 2px 0 rgba($color-black, $alpha: 50%));
+}
+.card-group .card {
+  padding: 60px 35px;
+}
+.card-group .card-logo {
+  height: 50px;
+  margin-bottom: 2rem;
+}
+.card-group p {
+  font-size: $fs-lg;
+  margin-bottom: 2rem;
+  line-height: 30px;
+}
+.learn__title,
+.tool__title {
+  font-size: $fs-lg;
+  font-weight: $fw-light;
+  color: $color-violet;
+  margin: 1rem 0;
+}
+.tool-item {
+  font-size: $fs-lg;
+  padding: 0.5rem 0;
+}

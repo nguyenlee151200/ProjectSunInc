@@ -1,0 +1,10 @@
+
+mixin header 
+    header
+        .container  
+            nav.navbar.navbar-expand-lg.navbar-light 
+                +logo('#','logo',"https://mattfarley.ca/img/mf-logo.svg",'48px')(class="logo")
+                button.navbar-toggler(type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation")
+                    span.navbar-toggler-icon 
+                .collapse.navbar-collapse#navbarNav 
+                    +nav

@@ -1,0 +1,14 @@
+@import '../base/mixin';
+@import '../base/variables';
+.project {
+  padding: 9rem 1.5rem;
+  & .row {
+    padding-top: 2rem 0.5rem;
+    @include md {
+      padding-top: 4rem;
+    }
+  }
+  & .button {
+    margin: 2rem;
+  }
+}

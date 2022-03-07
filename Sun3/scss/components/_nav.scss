@@ -1,0 +1,16 @@
+@import '../base/mixin';
+@import '../base/variables';
+.nav-item {
+  padding-left: 1rem;
+  line-height: 1.5;
+}
+
+.nav-link {
+  font-size: $fs-lg;
+  font-weight: $fw-light;
+  color: #141c3a !important;
+  font-family: $ff-europa;
+  &:hover {
+    color: $color-violet !important;
+  }
+}

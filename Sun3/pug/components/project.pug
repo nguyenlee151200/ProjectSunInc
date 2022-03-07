@@ -1,0 +1,10 @@
+mixin project
+    section.project.text-center
+        .container 
+            h3.title.title--medium My Recent Work 
+            p.subtitle.subtitle--small Here are a few design projects I've worked on recently. Want to see more?
+            .row 
+                each item in itemProject 
+                    .col-lg-4.col-md-6.col-12 
+                        +itemProject(item)
+            +button("See more on Dribble")

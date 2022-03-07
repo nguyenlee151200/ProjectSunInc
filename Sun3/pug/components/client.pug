@@ -1,0 +1,8 @@
+mixin client
+    section.client.text-center 
+        .container 
+            h2.title.title--medium I'm proud to have collaborated with some awesome companies:
+            .row 
+                each item in client 
+                    .col-md-3.col-6 
+                        img.client__img(src=item.src,alt=item.alt)

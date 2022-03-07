@@ -1,0 +1,38 @@
+
+include ../data/data.pug
+include ../components/logo.pug
+include ../components/nav.pug
+include ../components/button.pug
+include ../layouts/header.pug
+include ../layouts/footer.pug
+include ../components/hero.pug
+include ../components/aboutMe.pug
+include ../components/itemProject.pug
+include ../components/project.pug
+include ../components/client.pug
+include ../components/itemStartUp.pug
+include ../components/startup.pug
+include ../components/cardSkill.pug
+include ../components/testimonials.pug
+include ../components/cta.pug
+
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        meta(name="author" content="nguyen lee")
+        meta(name="keywords" content="structure, clean design patterns, and thoughtful interactions. Things I enjoy designing: UX, UI, Web, Mobile, Apps, Logos. Design Tools")
+        meta(name="description" content="I value simple content structure, clean design patterns, and thoughtful interactions. Things I enjoy designing: UX, UI, Web, Mobile, Apps, Logos. Design Tools:")
+        link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css")
+        link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+        link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css")
+        link(rel="stylesheet" href="../../../css/index.css" type="text/css")
+        block title
+    body 
+        +header 
+        block content
+        +footer 
+        script(src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js") 
+        script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js") 

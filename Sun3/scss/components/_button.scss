@@ -1,0 +1,21 @@
+@import '../base/mixin';
+@import '../base/variables';
+.button {
+  background: transparent;
+  color: $color-violet;
+  font-weight: $fw-medium;
+  font-size: $fs-lg;
+  padding: 0.5rem 1.25rem;
+  font-family: $ff-europa;
+  &:hover {
+    background: $color-violet;
+    color: $color-white;
+  }
+  &.btn--outline {
+    border: 2px solid $color-violet;
+    border-radius: 2rem;
+  }
+  &.btn--medium {
+    padding: 0.5rem 2rem;
+  }
+}
